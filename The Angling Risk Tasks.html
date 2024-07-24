@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+  钓鱼风险任务
+  </title>
+  <script src="https://www.naodao.com/public/experiment/libs/axios.min.js"></script>
+  <script src="https://www.naodao.com/experiment/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="static/js/math.min.js"></script>
+  
+  <link rel="stylesheet" href="static/css/jspsych.css">
+  <link rel="stylesheet" href="static/css/default_style.css">
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="static/js/jspsych/jspsych.js"></script>
+  <script src="static/js/jspsych/plugins/jspsych-text.js"></script>
+  <script src="static/js/jspsych/poldrack_plugins/jspsych-poldrack-text.js"></script>
+  <script src="static/js/jspsych/poldrack_plugins/jspsych-poldrack-instructions.js"></script>
+  <script src="static/js/jspsych/poldrack_plugins/jspsych-attention-check.js"></script>
+  <script src="static/js/jspsych/poldrack_plugins/jspsych-poldrack-single-stim.js"></script>
+  <script src="static/js/jspsych/plugins/jspsych-call-function.js"></script>
+  <script src="static/js/jspsych/plugins/jspsych-survey-text.js"></script>
+  <script src="static/js/jspsych/poldrack_plugins/jspsych-single-stim-button.js"></script>
+  <script src="static/js/utils/poldrack_utils.js"></script>
+  <script src="experiment.js"></script>
+  <script src="https://www.naodao.com/experiment/libs/jspsych5/naodao-2022-08.js"></script>
+</head>
+
+<body></body>
+<script>
+    $(document).ready(function () {
+      jsPsych.init({
+        timeline: jsPsych.plugins.NaoDao.mergeTrails(angling_risk_task_experiment),
+        display_element: "getDisplayElement",
+        fullscreen: true,
+      });
+    });
+</script>
+
+</html>
+  
